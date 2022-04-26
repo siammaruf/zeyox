@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('/fonts/TTFirsNeue-Medium.eot');
+    src: local('TTFirsNeue-Medium'),
+        url('../fonts/TTFirsNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTFirsNeue-Medium.woff2') format('woff2'),
+        url('../fonts/TTFirsNeue-Medium.woff') format('woff'),
+        url('../fonts/TTFirsNeue-Medium.ttf') format('truetype'),
+        url('../fonts/TTFirsNeue-Medium.svg#TTFirsNeue-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

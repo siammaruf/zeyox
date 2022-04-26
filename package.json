@@ -24,5 +24,10 @@
     "sass": "^1.50.1",
     "sass-loader": "^12.6.0",
     "webpack": "^5.72.0"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "jquery": "^3.6.0",
+    "jquery.nicescroll": "^3.7.6"
   }
 }

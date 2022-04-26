@@ -1,0 +1,31 @@
+// Main Nav Style ----------------------------
+.hamburguer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 34px;
+    height: 22px;
+    z-index: 1;
+    cursor: pointer;
+    &:hover{
+        -webkit-animation: zoom 300ms ease-in;
+            animation: zoom 300ms ease-in;
+    }
+    .lines{
+        background-color: #0A0A0A;
+        width: 100%;
+        height: 2px;
+        transition: all 450ms ease-in;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+}
+
+.close-hamburguer{
+    .line-top {
+        transform: translateY(200%) rotate(45deg);
+    }
+    .line-bottom {
+        transform: translateY(-200%) rotate(135deg);
+    }
+}

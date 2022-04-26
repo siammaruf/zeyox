@@ -1,1 +1,230 @@
+* {
+  font-family: "TT Firs Neue";
+}
 
+h1, h2, h3, h4, h5, h6, p {
+  font-style: normal;
+  color: #0A0A0A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+.container-banner,
+.container-full {
+  padding: 0 60px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.container-banner {
+  padding: 0 120px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.anim-e, .home-feature-area .rolling-text-holder .rolling-text-item ul li a.active-item, .home-feature-area .rolling-text-holder .rolling-text-item ul li a.inactive-item, .home-feature-area .rolling-text-holder .rolling-text-item ul li a {
+  transition: all 0.5s ease-in-out;
+}
+
+.circle {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  border-radius: 100%;
+  z-index: 1;
+  z-index: 10000;
+  transform: scale(1);
+}
+
+.circle.circle-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.circle-follow {
+  position: fixed;
+  border: 1px solid rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  left: -21px;
+  top: -21px;
+  border-radius: 100%;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: scale(1);
+}
+
+.circle-follow.circle-follow-white {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.hamburguer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 34px;
+  height: 22px;
+  z-index: 1;
+  cursor: pointer;
+}
+.hamburguer:hover {
+  -webkit-animation: zoom 300ms ease-in;
+  animation: zoom 300ms ease-in;
+}
+.hamburguer .lines {
+  background-color: #0A0A0A;
+  width: 100%;
+  height: 2px;
+  transition: all 450ms ease-in;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.close-hamburguer .line-top {
+  transform: translateY(200%) rotate(45deg);
+}
+.close-hamburguer .line-bottom {
+  transform: translateY(-200%) rotate(135deg);
+}
+
+.home-main-title-area {
+  padding-top: 215px;
+  margin-bottom: 145px;
+}
+.home-main-title-area .site-main-title {
+  font-size: 100px;
+  line-height: 115px;
+}
+.home-main-title-area .site-main-title span {
+  overflow: hidden;
+  display: block;
+}
+.home-main-title-area .site-main-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: 70px;
+}
+.home-main-title-area .site-main-description span {
+  overflow: hidden;
+  display: block;
+}
+
+.main-banner-area {
+  padding-top: 70px;
+}
+
+.home-feature-area {
+  margin-top: 170px;
+  min-height: 1080px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.home-feature-area .rolling-text-holder {
+  white-space: nowrap;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul li {
+  display: inline-block;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul li a {
+  font-weight: 600;
+  font-size: 140px;
+  line-height: 160px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 100px;
+  padding-right: 50px;
+  position: relative;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul li a::before {
+  content: "/";
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul li:first-child a::before {
+  display: none;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul li a.inactive-item {
+  opacity: 0.2;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item ul li a.active-item {
+  opacity: 1;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item:first-child {
+  margin-right: -50%;
+}
+.home-feature-area .rolling-text-holder .rolling-text-item:last-child {
+  margin-left: -50%;
+}
+
+.feature-progress-bar {
+  width: 100%;
+  height: 1px;
+  background-color: #4E4E4E;
+  border: none;
+  -webkit-appearance: none;
+}
+.feature-progress-bar::-webkit-progress-bar {
+  background-color: #4E4E4E;
+}
+.feature-progress-bar::-webkit-progress-value {
+  background-color: #ffffff;
+  background-attachment: fixed;
+}
+.feature-progress-bar::-moz-progress-bar {
+  background-color: #ffffff;
+  background-attachment: fixed;
+}
+
+.progress-bar-area {
+  position: absolute;
+  width: 100%;
+  bottom: -200px;
+  left: 0;
+}
+
+.body-section {
+  margin-top: 220px;
+}
+
+.section-project .section-title h2 {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+}
+.section-project .section-content {
+  margin-top: 60px;
+}
+.section-project .section-content .content-holder h3 {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 75px;
+}
+.section-project .section-content .content-holder p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+}
